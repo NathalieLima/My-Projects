@@ -1,0 +1,24 @@
+from datetime import date, datetime, timedelta, time
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait 
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+import selenium.webdriver.common.keys
+
+options = webdriver.ChromeOptions()
+#options.add_argument("--headless")
+driver = webdriver.Chrome(options=options)
+
+driver.get("https://suap.ifba.edu.br/accounts/login/?next=/")
+
+x = '//*[@id="id_username"]'
+y = '//*[@id="id_password"]'
+z = '//*[@id="login"]/form/div[3]/input'
+driver.find_element(By.XPATH, x).send_keys("usuario")
+driver.find_element(By.XPATH, y).send_keys("senha")
+driver.find_element(By.XPATH, z).click()
+
+driver.get("https://suap.ifba.edu.br/edu/aluno/20191ITI0038/?tab=boletim")
+
+oi = driver.find_element(By.XPATH, '//*[@id="content"]/div[13]/div[2]/div/table/tbody')
+print(oi.text)

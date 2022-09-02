@@ -1,0 +1,131 @@
+https://www.homehost.com.br/blog/tutoriais/tags-html/
+https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meus primeiros passos</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!--<script>
+		alert("Quero amar vocês");
+	</script>-->
+</head>
+<body>
+
+	<h1>HappyTrip</h1>
+	<h2>Agência de Viagens</h2>
+
+	<p>Seja bem-vindo(a) ao site da melhor agência de viagens do Brasil, a HappyTrip!</p>
+
+	<h3>Tabela de preços</h3>
+	
+	<table border="1">
+		<tr>
+			<th>&nbsp;</th>
+			<th>Janeiro</th>
+			<th>Fevereiro</th>
+			<th>Março</th>
+			<th>Abril</th>
+		</tr>
+		<tr>
+			<th>Quinzena 1</th>
+			<td>1.500</td>
+			<td>2.000</td>
+			<td>3.000</td>
+			<td>1.000</td>
+		</tr>
+		<tr>
+			<th>Quinzena 2</th>
+			<td>2.500</td>
+			<td>1.000</td>
+			<td>4.000</td>
+			<td>500</td>
+		</tr>
+	</table>
+
+	<h3>Fotos do local</h3>
+	<img src="images/cali1.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
+	<img src="images/cali2.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
+	<img src="images/cali3.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
+	<img src="images/cali4.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
+
+	<h3>Reserva</h3>
+	<p>Não perca esta oportunidade incrível!
+		Faça já sua reserva para a viagem que vai mudar a sua viagem.</p>
+
+	<form>
+		<h4>Seus dados pessoais</h4>
+
+		<label>Nome:</label>
+		<input type="text" name="txtNome" required>
+
+		<label>Sobrenome:</label>
+		<input type="text" name="txtSobrenome" required>
+
+		<label>Idade:</label>
+		<input type="number" name="txtIdade" required>
+
+		<label>Estado:</label>
+		<select>
+			<option>BA</option>
+			<option>RJ</option>
+			<option>SP</option>
+		</select>
+
+		<h4>Dados da viagem</h4>
+
+		<label>Tipo de passagem:</label>
+		<input type="radio" name="txtTipo">Ida
+		<input type="radio" name="txtTipo">Ida e volta
+
+		<label>Lugares a ir:</label>
+		<input type="checkbox" name="txtLugar">Praça da Irene
+		<input type="checkbox" name="txtLugar">Juazeiro
+		<input type="checkbox" name="txtLugar">Golden State
+		<input type="checkbox" name="txtLugar">Praia da Barra
+		<input type="checkbox" name="txtLugar">Cabana Marajá
+		
+		<h4>Finalização</h4>
+
+		<input type="submit" value="Fazer reserva">
+	</form>
+
+
+	<h3>Redes sociais</h3>
+
+	<a href="https://web.whatsapp.com/"><button type="button">
+		<img src="images/wpp.jpg" 
+			alt="Ícone do WhatsApp" 
+			height="100">
+	</button></a>
+	<a href="https://facebook.com/"><button type="button">
+		<img src="images/face.jpg" 
+			alt="Ícone do Facebook" 
+			height="100">
+	</button></a>
+	<a href="https://instagram.com/"><button type="button">
+		<img src="images/insta.png" 
+			alt="Ícone do Instagram" 
+			height="100">
+	</button></a>
+	<a href="https://twitter.com/"><button type="button">
+		<img src="images/twitter.jpg" 
+			alt="Ícone do Twitter" 
+			height="100">
+	</button></a>
+	<a href="https://br.linkedin.com/"><button type="button">
+		<img src="images/din.jpg" 
+			alt="Ícone do LinkedIn" 
+			height="100">
+	</button></a>
+
+
+	
+	
+
+
+</body>
+</html>

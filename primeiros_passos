@@ -1,6 +1,3 @@
-https://www.homehost.com.br/blog/tutoriais/tags-html/
-https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,20 +6,42 @@ https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/
 	<title>Meus primeiros passos</title>
 	<link rel="stylesheet" href="style.css">
 
+        s
 	<!--<script>
 		alert("Quero amar vocês");
 	</script>-->
 </head>
 <body>
 
+	<?php include 'cabecalho.html;'
+	?>
+
 	<h1>HappyTrip</h1>
 	<h2>Agência de Viagens</h2>
 
 	<p>Seja bem-vindo(a) ao site da melhor agência de viagens do Brasil, a HappyTrip!</p>
+        
+        <pre>Teste</pre>
+        
+        
+	<p>Primeiramente, é preciso que você saiba de algumas coisas, como:</p>
+	
+        <ul>
+		<li>A viagem durará 10 dias;</li>
+		<li>Não há reembolso;</li>
+		<li>Você poderá andar pela cidade;</li>
+		<li>Terá uma parada noturna.</li>
+	</ul>
+
+        <ol>
+            <li>Boa noite;</li>
+            <li>Banana.</li>
+        </ol>
 
 	<h3>Tabela de preços</h3>
 	
-	<table border="1">
+	<table border="5">
+            <caption>Tabela de preços</caption>
 		<tr>
 			<th>&nbsp;</th>
 			<th>Janeiro</th>
@@ -47,33 +66,40 @@ https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/
 	</table>
 
 	<h3>Fotos do local</h3>
-	<img src="images/cali1.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
-	<img src="images/cali2.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
-	<img src="images/cali3.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
-	<img src="images/cali4.jpg" width="500" height="auto" alt="Uma imagem da Califórnia">
+        
+	<img class="galery" src="images/cali1.jpg" alt="Uma imagem da Califórnia">
+	<img class="galery" src="images/cali2.jpg" alt="Uma imagem da Califórnia">
+	<img class="galery" src="images/cali3.jpg" alt="Uma imagem da Califórnia">
+	<img class="galery" src="images/cali4.jpg" alt="Uma imagem da Califórnia">
 
 	<h3>Reserva</h3>
-	<p>Não perca esta oportunidade incrível!
-		Faça já sua reserva para a viagem que vai mudar a sua viagem.</p>
+        
+	<p class='white'>Não perca esta oportunidade incrível!
+		Faça já sua reserva para a viagem que vai mudar a sua vida.</p>
 
-	<form>
+	<form action="reserva.php" method="post">
 		<h4>Seus dados pessoais</h4>
 
 		<label>Nome:</label>
-		<input type="text" name="txtNome" required>
+		<input type="text" name="txtNome" placeholder="Insira seu nome" required>
 
 		<label>Sobrenome:</label>
-		<input type="text" name="txtSobrenome" required>
+		<input type="text" name="txtSobrenome" placeholder="Insira seu sobrenome" required>
 
 		<label>Idade:</label>
-		<input type="number" name="txtIdade" required>
+		<input type="number" name="txtIdade" placeholder="Insira sua idade" required>
 
 		<label>Estado:</label>
-		<select>
+		<select value='' data-default=''>
 			<option>BA</option>
-			<option>RJ</option>
+			<option selected>RJ</option>
 			<option>SP</option>
 		</select>
+                
+                <label>Observações</label>
+                <textarea></textarea>
+                
+                <textarea>Teste</textarea>
 
 		<h4>Dados da viagem</h4>
 
@@ -94,38 +120,6 @@ https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/
 	</form>
 
 
-	<h3>Redes sociais</h3>
-
-	<a href="https://web.whatsapp.com/"><button type="button">
-		<img src="images/wpp.jpg" 
-			alt="Ícone do WhatsApp" 
-			height="100">
-	</button></a>
-	<a href="https://facebook.com/"><button type="button">
-		<img src="images/face.jpg" 
-			alt="Ícone do Facebook" 
-			height="100">
-	</button></a>
-	<a href="https://instagram.com/"><button type="button">
-		<img src="images/insta.png" 
-			alt="Ícone do Instagram" 
-			height="100">
-	</button></a>
-	<a href="https://twitter.com/"><button type="button">
-		<img src="images/twitter.jpg" 
-			alt="Ícone do Twitter" 
-			height="100">
-	</button></a>
-	<a href="https://br.linkedin.com/"><button type="button">
-		<img src="images/din.jpg" 
-			alt="Ícone do LinkedIn" 
-			height="100">
-	</button></a>
-
-
-	
-	
-
-
+	<?php include 'rodape.html'; ?>
 </body>
 </html>

@@ -1,0 +1,13 @@
+num = 34
+
+binario = []
+
+while num != 0:  #1 para impar
+    binario.append(num % 2)
+    num = num // 2
+    if num == 0:
+        binario.append(num % 2)
+
+
+
+print("Número decimal {} é {} em binário".format(34, binario))

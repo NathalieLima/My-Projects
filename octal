@@ -1,0 +1,25 @@
+num = 83
+octal = []
+
+
+if num <= 8:
+    octal = num
+else:
+    while num > 8:
+        divint = num // 8
+        resto = num % 8
+
+
+
+        octal.append(resto)
+
+        print("resto:", resto)
+        print("div int:", divint)
+        num = num // 8
+
+        if resto < 8 and divint < 8:
+            octal.append(num % 8)
+            octal.reverse()
+            
+print("Octal é:", octal)
+

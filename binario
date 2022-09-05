@@ -1,0 +1,21 @@
+decimal = 0 
+while decimal < 256:
+    num = decimal
+    binario = []
+
+    if num % 2 != 0:
+        condicao = 1
+    else:
+        condicao = 0
+
+    while num != condicao:
+        binario.append(str(num % 2))
+        num = num // 2
+        if num == condicao:
+            binario.append(str(num % 2))
+            
+    if decimal % 2 == 0:
+        binario = list(reversed(binario[0:-1]))
+            
+    print("Número decimal {} é {} em binário".format(decimal, "".join(binario)))
+    decimal += 1

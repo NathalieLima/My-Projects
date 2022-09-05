@@ -1,0 +1,25 @@
+#include <iostream>
+
+//Escreva um programa que imprime uma tabela dos equivalentes
+//binários, octais e hexadecimais dos números decimais, no intervalo
+//0 a 255. Se não estiver familiarizado com estes sistemas de
+//numeração, leia primeiro o apêndice C.
+
+using namespace std;
+
+int main()
+{
+    int i = 0;
+
+    while (i < 256){
+        
+        
+        
+        cout << i++ << endl;
+    }
+
+
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
